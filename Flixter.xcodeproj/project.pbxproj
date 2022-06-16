@@ -14,6 +14,7 @@
 		5447DB9B285BCB0D002D06C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5447DB99285BCB0D002D06C3 /* LaunchScreen.storyboard */; };
 		5447DB9E285BCB0D002D06C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5447DB9D285BCB0D002D06C3 /* main.m */; };
 		5447DBA6285BCE86002D06C3 /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5447DBA5285BCE86002D06C3 /* MovieViewController.m */; };
+		5447DBAC285BE13E002D06C3 /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5447DBAB285BE13E002D06C3 /* MovieCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		5447DB9D285BCB0D002D06C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5447DBA4285BCE86002D06C3 /* MovieViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieViewController.h; sourceTree = "<group>"; };
 		5447DBA5285BCE86002D06C3 /* MovieViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieViewController.m; sourceTree = "<group>"; };
+		5447DBAA285BE13E002D06C3 /* MovieCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieCell.h; sourceTree = "<group>"; };
+		5447DBAB285BE13E002D06C3 /* MovieCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				5447DBA4285BCE86002D06C3 /* MovieViewController.h */,
 				5447DBA5285BCE86002D06C3 /* MovieViewController.m */,
 				5447DB94285BCB0C002D06C3 /* Main.storyboard */,
+				5447DBAA285BE13E002D06C3 /* MovieCell.h */,
+				5447DBAB285BE13E002D06C3 /* MovieCell.m */,
 				5447DB97285BCB0D002D06C3 /* Assets.xcassets */,
 				5447DB99285BCB0D002D06C3 /* LaunchScreen.storyboard */,
 				5447DB9C285BCB0D002D06C3 /* Info.plist */,
@@ -147,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5447DB8D285BCB0C002D06C3 /* AppDelegate.m in Sources */,
+				5447DBAC285BE13E002D06C3 /* MovieCell.m in Sources */,
 				5447DB9E285BCB0D002D06C3 /* main.m in Sources */,
 				5447DB90285BCB0C002D06C3 /* SceneDelegate.m in Sources */,
 				5447DBA6285BCE86002D06C3 /* MovieViewController.m in Sources */,
