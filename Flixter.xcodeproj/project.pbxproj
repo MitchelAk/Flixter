@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		5447DB8D285BCB0C002D06C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5447DB8C285BCB0C002D06C3 /* AppDelegate.m */; };
 		5447DB90285BCB0C002D06C3 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5447DB8F285BCB0C002D06C3 /* SceneDelegate.m */; };
-		5447DB93285BCB0C002D06C3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5447DB92285BCB0C002D06C3 /* ViewController.m */; };
 		5447DB96285BCB0C002D06C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5447DB94285BCB0C002D06C3 /* Main.storyboard */; };
 		5447DB98285BCB0D002D06C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5447DB97285BCB0D002D06C3 /* Assets.xcassets */; };
 		5447DB9B285BCB0D002D06C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5447DB99285BCB0D002D06C3 /* LaunchScreen.storyboard */; };
 		5447DB9E285BCB0D002D06C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5447DB9D285BCB0D002D06C3 /* main.m */; };
+		5447DBA6285BCE86002D06C3 /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5447DBA5285BCE86002D06C3 /* MovieViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +22,13 @@
 		5447DB8C285BCB0C002D06C3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5447DB8E285BCB0C002D06C3 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		5447DB8F285BCB0C002D06C3 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		5447DB91285BCB0C002D06C3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5447DB92285BCB0C002D06C3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5447DB95285BCB0C002D06C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5447DB97285BCB0D002D06C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5447DB9A285BCB0D002D06C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5447DB9C285BCB0D002D06C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5447DB9D285BCB0D002D06C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5447DBA4285BCE86002D06C3 /* MovieViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieViewController.h; sourceTree = "<group>"; };
+		5447DBA5285BCE86002D06C3 /* MovieViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +65,8 @@
 				5447DB8C285BCB0C002D06C3 /* AppDelegate.m */,
 				5447DB8E285BCB0C002D06C3 /* SceneDelegate.h */,
 				5447DB8F285BCB0C002D06C3 /* SceneDelegate.m */,
-				5447DB91285BCB0C002D06C3 /* ViewController.h */,
-				5447DB92285BCB0C002D06C3 /* ViewController.m */,
+				5447DBA4285BCE86002D06C3 /* MovieViewController.h */,
+				5447DBA5285BCE86002D06C3 /* MovieViewController.m */,
 				5447DB94285BCB0C002D06C3 /* Main.storyboard */,
 				5447DB97285BCB0D002D06C3 /* Assets.xcassets */,
 				5447DB99285BCB0D002D06C3 /* LaunchScreen.storyboard */,
@@ -146,10 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5447DB93285BCB0C002D06C3 /* ViewController.m in Sources */,
 				5447DB8D285BCB0C002D06C3 /* AppDelegate.m in Sources */,
 				5447DB9E285BCB0D002D06C3 /* main.m in Sources */,
 				5447DB90285BCB0C002D06C3 /* SceneDelegate.m in Sources */,
+				5447DBA6285BCE86002D06C3 /* MovieViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
