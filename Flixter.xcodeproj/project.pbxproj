@@ -15,6 +15,7 @@
 		5447DB9E285BCB0D002D06C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5447DB9D285BCB0D002D06C3 /* main.m */; };
 		5447DBA6285BCE86002D06C3 /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5447DBA5285BCE86002D06C3 /* MovieViewController.m */; };
 		5447DBAC285BE13E002D06C3 /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5447DBAB285BE13E002D06C3 /* MovieCell.m */; };
+		5447DBAF285C5408002D06C3 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5447DBAE285C5408002D06C3 /* DetailViewController.m */; };
 		E72D24BD63A3055A51AFF032 /* Pods_Flixter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C203410C371098B4389F88F /* Pods_Flixter.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,8 @@
 		5447DBA5285BCE86002D06C3 /* MovieViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieViewController.m; sourceTree = "<group>"; };
 		5447DBAA285BE13E002D06C3 /* MovieCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieCell.h; sourceTree = "<group>"; };
 		5447DBAB285BE13E002D06C3 /* MovieCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
+		5447DBAD285C5408002D06C3 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		5447DBAE285C5408002D06C3 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		BF92660867FF733933202206 /* Pods-Flixter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixter.debug.xcconfig"; path = "Target Support Files/Pods-Flixter/Pods-Flixter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,7 +59,6 @@
 				BF92660867FF733933202206 /* Pods-Flixter.debug.xcconfig */,
 				2A7D40FA27E4C1C6227543A1 /* Pods-Flixter.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -96,6 +98,8 @@
 				5447DBA4285BCE86002D06C3 /* MovieViewController.h */,
 				5447DBA5285BCE86002D06C3 /* MovieViewController.m */,
 				5447DB94285BCB0C002D06C3 /* Main.storyboard */,
+				5447DBAD285C5408002D06C3 /* DetailViewController.h */,
+				5447DBAE285C5408002D06C3 /* DetailViewController.m */,
 				5447DBAA285BE13E002D06C3 /* MovieCell.h */,
 				5447DBAB285BE13E002D06C3 /* MovieCell.m */,
 				5447DB97285BCB0D002D06C3 /* Assets.xcassets */,
@@ -225,6 +229,7 @@
 				5447DB9E285BCB0D002D06C3 /* main.m in Sources */,
 				5447DB90285BCB0C002D06C3 /* SceneDelegate.m in Sources */,
 				5447DBA6285BCE86002D06C3 /* MovieViewController.m in Sources */,
+				5447DBAF285C5408002D06C3 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
