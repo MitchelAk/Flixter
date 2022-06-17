@@ -6,8 +6,12 @@
 //
 
 #import "DetailViewController.h"
+#import "UIImageView+AFNetworking.h"
 
 @interface DetailViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *posterView;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *synopsisLabel;
 
 @end
 
@@ -15,7 +19,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.titleLabel.text = self.detailDict[@"title"];
+    self.synopsisLabel.text = self.detailDict[@"overview"];
+    
+    
+    NSString *baseURLString = @"https://image.tmdb.org/t/p/w500";
+    NSString *posterURLString = self.detailDict[@"poster_path"];
+    NSString *fullPosterURLString = [baseURLString stringByAppendingString:posterURLString];
+    
+    NSURL *posterURL = [NSURL URLWithString:fullPosterURLString];
+    [self.posterView setImageWithURL:posterURL];
+    
 }
 
 /*
@@ -29,3 +43,5 @@
 */
 
 @end
+
+

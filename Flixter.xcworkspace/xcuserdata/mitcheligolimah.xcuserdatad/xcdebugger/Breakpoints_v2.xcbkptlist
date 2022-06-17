@@ -14,8 +14,8 @@
             filePath = "Flixter/MovieViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "-fetchMovies"
             landmarkType = "7">
          </BreakpointContent>

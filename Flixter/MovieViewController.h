@@ -10,6 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MovieViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityindicator;
 
 @end
 

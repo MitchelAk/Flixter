@@ -7,6 +7,7 @@
 
 #import "MovieViewController.h"
 #import "MovieCell.h"
+#import "DetailViewController.h"
 #import "UIImageView+AFNetworking.h"
 
 @interface MovieViewController () <UITableViewDataSource>
@@ -27,6 +28,13 @@
     [self.refreshControl addTarget:self action:@selector(fetchMovies)forControlEvents:UIControlEventValueChanged];
     
     [self.tableView insertSubview:self.refreshControl atIndex:0];
+    
+    //Activity Indicator.
+    [self.activityindicator startAnimating];
+
+    // Stop the activity indicator
+    // Hides automatically if "Hides When Stopped" is enabled
+    [self.activityindicator stopAnimating];
 }
     - (void)fetchMovies {
         NSURL *url = [NSURL URLWithString:@"https://api.themoviedb.org/3/movie/now_playing?api_key=043cf69f9597ab9a0a63b5c570ef7a7f"];
@@ -35,6 +43,21 @@
         NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
                if (error != nil) {
                    NSLog(@"%@", [error localizedDescription]);
+                   
+                   if (error.code == -1009){
+                       UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Cannot Get Movies"
+                                                      message:@"No Internet Connection."
+                                                      preferredStyle:UIAlertControllerStyleAlert];
+                        
+                       UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"Try again" style:UIAlertActionStyleDefault
+                                                                             handler:^(UIAlertAction * action) {[self fetchMovies];  }];
+                        
+                       [alert addAction:defaultAction];
+                       [self presentViewController:alert animated:YES completion:nil];
+
+                       
+                       
+                   }
                }
                else {
                    NSDictionary *dataDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
@@ -75,6 +98,7 @@
     cell.titleLabel.text = movies[@"title"];
     cell.synopsisLabel.text = movies[@"overview"];
     
+    
     NSString *baseURLString = @"https://image.tmdb.org/t/p/w500";
     NSString *posterURLString = movies[@"poster_path"];
     NSString *fullPosterURLString = [baseURLString stringByAppendingString:posterURLString];
@@ -95,15 +119,17 @@
        
 
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    NSDictionary *dataToPass = self.movies[[self.tableView indexPathForCell:sender].row];
+    DetailViewController *detailVC = [segue destinationViewController];
+    detailVC.detailDict = dataToPass;
+  
 }
-*/
-
 
 @end
